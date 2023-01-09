@@ -1,0 +1,7 @@
+hadoop fs -cat /college/input.txt // first  create file
+
+hadoop jar D:/hadoop.3.3/share/hadoop/map.jar  wordcount /college/input.txt /output{auto create dir}
+
+hadoop fs /output
+
+hadoop fs -cat /output/part-r-000
